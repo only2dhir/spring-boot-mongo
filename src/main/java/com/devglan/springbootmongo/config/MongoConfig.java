@@ -19,11 +19,6 @@ public class MongoConfig {
     public MongoDbFactory mongoDbFactory() {
         return new SimpleMongoDbFactory(new MongoClientURI(env.getProperty("spring.data.mongodb.uri")));
     }
-*/
-    @Bean
-    public MongoDbFactory mongoDbFactory() {
-        return new SimpleMongoDbFactory(new MongoClient(), "test_db");
-    }
 
      @Bean
      public MongoTemplate mongoTemplate() {
@@ -33,5 +28,5 @@ public class MongoConfig {
         return mongoTemplate;
 
     }
-
+*/
 }
